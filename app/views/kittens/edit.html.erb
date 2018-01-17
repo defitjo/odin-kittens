@@ -1,0 +1,7 @@
+<% provide(:button_text, 'Update Kitten')
+
+<h1>Edit your Kitten</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'destroy', kittens_path, method: :delete, class: "btn btn-danger" %>

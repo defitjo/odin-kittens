@@ -1,0 +1,15 @@
+<%= form_for @kitten do |f| %>
+  <%= f.label :name, class: "control-label" %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :age, class: "control-label" %>
+  <%= f.text_field :age, class: "form-control" %>
+
+  <%= f.label :cuteness, class: "control-label" %>
+  <%= f.text_field :cuteness, class: 'form-control' %>
+
+  <%= f.label :softness, class: "control-label" %>
+  <%= f.text_field :softness, class: "form-control" %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
